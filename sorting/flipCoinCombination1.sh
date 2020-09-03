@@ -84,7 +84,7 @@ done
 echo "Triplet combination:"
 for index in  ${!dict2[@]}
 do
-        echo "Number of ti	mes $index appears is "${dict2[$index]}
+        echo "Number of times $index appears is "${dict2[$index]}
         percent=`echo ${dict2[$index]} $n | awk '{print $1/$2}'`
         percentile=`echo $percent 100 | awk '{print $1*$2}'`
         echo "The percentage of $index is "$percentile
